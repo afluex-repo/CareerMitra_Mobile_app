@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_action_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/job_highlights_constraintlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bg"
+                android:padding="10dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_job_highlights"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_highlights"
+                    android:textAppearance="@style/TextField_Bold"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:layout_marginTop="4dp"
+                    android:drawableLeft="@drawable/ic_baseline_location_city_24"
+                    android:drawablePadding="10dp"
+                    android:text="2-4 Year"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_job_highlights" />
+
+                <TextView
+                    android:id="@+id/tv_experience_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawableLeft="@drawable/ic_students_cap"
+                    android:drawablePadding="10dp"
+                    android:text="2-4 Year"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_company_name" />
+
+                <TextView
+                    android:id="@+id/tv_vacancies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="10dp"
+                    android:text="2 Vacancies"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_experience_year" />
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_job_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="10dp"
+                    android:text="Lucknow"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_vacancies" />
+
+
+                <TextView
+                    android:id="@+id/tv_posted_job_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Posted 30 days ago | job Applications 65"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_job_location" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/job_discription_constraintlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/border_bg"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/job_highlights_constraintlayout">
+
+                <TextView
+                    android:id="@+id/tv_job_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_description"
+                    android:textAppearance="@style/TextField_Bold"
+                    android:textColor="@color/text_color"
+
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_describ_about_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Describe about Job "
+                    android:textAppearance="@style/TextField_Bold"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_job_description" />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recv_skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_describ_about_job" />
+                <LinearLayout
+                    android:id="@+id/liner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/recv_skills"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="0.5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/role"
+                    android:layout_weight="2"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/Carpenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/carpenter"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color"
+
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                   />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/liner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    app:layout_constraintTop_toBottomOf="@+id/liner1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/Industry_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/industry"
+                    android:layout_weight="2"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_industry_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Brass Industry"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    android:layout_weight="1"
+
+                  />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/liner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    app:layout_constraintTop_toBottomOf="@+id/liner2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+
+                <TextView
+                    android:id="@+id/EmploymentType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/employment"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/tv_employmenttype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carpenter"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                  android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/liner3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/Salary"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salary_in_rs"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_Salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/carpenter"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+
+                   />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/employment_type_constraintlayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_bg"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/job_discription_constraintlayout">
+
+
+                <TextView
+                    android:id="@+id/education_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/education"
+                    android:textAppearance="@style/TextField_Bold"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="MCA in computer Science"
+                    android:textAppearance="@style/TextField_Bold"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/education_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/about_company_constraintlayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_bg"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/employment_type_constraintlayout">
+
+                <TextView
+                    android:id="@+id/about_company_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_company"
+                    android:textAppearance="@style/TextField_Bold"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_about_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="good working knowledge of wordpress ."
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/about_company_text" />
+
+
+                <LinearLayout
+                    android:id="@+id/linerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                   app:layout_constraintTop_toBottomOf="@+id/tv_about_company"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextField_Bold"                        android:textSize="12dp"
+
+                        android:textColor="@color/text_color"
+                        android:layout_weight="2"
+                        android:text="@string/email"/>
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:textSize="12dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linerLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/linerLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextField_Bold"                        android:textSize="12dp"
+                        android:textColor="@color/text_color"
+                        android:layout_weight="2"
+                        android:text="@string/phone_no"/>
+                    <TextView
+                        android:id="@+id/tv_mobile_no"
+                        android:layout_width="match_parent"
+                        android:textSize="12dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linerLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/linerLayout1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textSize="12dp"
+
+                        android:textColor="@color/text_color"
+                        android:layout_weight="2"
+                        android:text="@string/address"/>
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:textSize="12dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_company_constraintlayout">
+
+
+                <Button
+                    android:id="@+id/btn_applay_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="@string/apply_now"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

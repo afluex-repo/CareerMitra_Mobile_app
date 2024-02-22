@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_constrantlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="UserName"
+            android:paddingTop="8dp"
+            android:textAppearance="@style/TextField_Bold"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_grey"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@+id/img_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_position_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Email Id"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_grey"
+            app:layout_constraintLeft_toLeftOf="@+id/img_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_complete_profile_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="0% Profile Complete"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/profile_constrantlayout"
+            app:layout_constraintTop_toBottomOf="@+id/img_profile" />
+
+        <TextView
+            android:id="@+id/tv_profile_last_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Last update in 3 ago"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_constrantlayout"
+            app:layout_constraintTop_toBottomOf="@+id/img_profile" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/white"
+            android:max="100"
+            app:layout_constraintTop_toBottomOf="@+id/tv_profile_last_update" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_constrantlayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+
+                    <EditText
+                        android:id="@+id/et_search_by_skilled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/search_box"
+                        android:drawableStart="@drawable/ic_icons8_search"
+                        android:gravity="center"
+                        android:hint="Search Job by Skill"
+                        android:imeOptions="actionNext"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:cursorVisible="false"
+                        android:editable="false"
+
+                        android:drawableEnd="@drawable/vw_ic_arrow_down"
+                        android:drawableTint="@color/colorPrimary"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/et_location_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/search_box"
+                        android:drawableStart="@drawable/ic_placeholder"
+                        android:gravity="center"
+                        android:hint="Location"
+                        android:imeOptions="actionNext"
+                        android:drawableEnd="@drawable/vw_ic_arrow_down"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:drawableTint="@color/colorPrimary"
+
+                        app:layout_constraintTop_toBottomOf="@+id/et_search_by_skilled" />
+
+                    <Button
+                        android:id="@+id/btn_search"
+                        android:layout_width="180dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/round_bg"
+                        android:gravity="center"
+                        android:text="Search"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/et_location_search" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_rec_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintTop_toBottomOf="@+id/cardview">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_recommended_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="RECOMMENDED JOB "
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="8dp"
+                        android:background="#CCCCD1"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_recommended_job" />
+
+                    <TextView
+                        android:id="@+id/tv_applied_jobs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="APPLIED JOB "
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+              <TextView
+                  android:id="@+id/text1"
+                  android:layout_width="match_parent"
+                  android:padding="4dp"
+                  android:background="@color/colorPrimary"
+                  android:layout_height="wrap_content"
+                  android:text="Latest Job"
+                  android:gravity="center"
+                  android:textSize="14dp"
+                  android:textAppearance="@style/TextField_Bold"
+                  android:textColor="@color/white"
+                  app:layout_constraintTop_toBottomOf="@+id/cv_rec_app"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recentjobs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

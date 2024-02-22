@@ -1,0 +1,448 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_constrantlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ic_iconfinder_icons_user2_1564535"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="Username"
+            android:textAppearance="@style/TextField_Bold"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/img_profile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:hint="Username"
+            android:textAppearance="@style/TextField_Bold"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/img_profile"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dashboard_constrantlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/profile_constrantlayout">
+
+        <TextView
+            android:id="@+id/tv_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_home"
+            android:drawablePadding="20dp"
+            android:padding="8dp"
+            android:text="@string/home"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="@+id/dashboard_constrantlayout"
+            app:layout_constraintTop_toTopOf="@+id/dashboard_constrantlayout" />
+
+        <TextView
+            android:id="@+id/tv_Jobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:drawableLeft="@drawable/ic_job_seeker"
+            android:drawablePadding="20dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="6dp"
+            android:paddingRight="8dp"
+            android:text="@string/jobs_search"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/dashboard_constrantlayout"
+            app:layout_constraintStart_toStartOf="@+id/dashboard_constrantlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dashboard"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/tv_Jobs" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/jobs_constraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_constrantlayout">
+
+        <TextView
+            android:id="@+id/tv_search_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="6dp"
+            android:padding="4dp"
+            android:text="@string/search_job"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toTopOf="@+id/jobs_constraintlayout" />
+
+        <!--  <TextView
+            android:id="@+id/tv_recommended_job_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="32dp"
+            android:padding="4dp"
+            android:text="20"
+
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_search_job" />
+
+        <TextView
+            android:id="@+id/tv_saved_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="6dp"
+            android:padding="4dp"
+
+            android:text="Saved Job"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recommended_job" />
+
+        <TextView
+            android:id="@+id/tv_custom_job_alerts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="6dp"
+            android:padding="4dp"
+            android:text="Custom Job Alerts"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_saved_job" />
+
+        <TextView
+            android:id="@+id/tv_custom_job_alerts_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="32dp"
+            android:padding="4dp"
+            android:text="20"
+
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/jobs_constraintlayout"
+            app:layout_constraintRight_toRightOf="@+id/tv_custom_job_alerts"
+            app:layout_constraintTop_toBottomOf="@+id/tv_saved_job" />-->
+
+        <TextView
+            android:id="@+id/tv_recommended_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="@string/recent_job"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_search_job" />
+
+        <TextView
+            android:id="@+id/tv_applied_jobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="6dp"
+            android:padding="4dp"
+            android:text="@string/applied_jobs"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recommended_job" />
+
+
+        <!---   <TextView
+               android:id="@+id/tv_incomplete_jobs_application"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="60dp"
+               android:layout_marginTop="6dp"
+               android:padding="4dp"
+               android:text="Incomeplete Jobs Application"
+               android:textColor="@color/text_color"
+               android:textSize="14sp"
+   
+               app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+               app:layout_constraintTop_toBottomOf="@+id/tv_applied_jobs" />-->
+
+        <TextView
+            android:id="@+id/tv_training"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+
+            android:drawableLeft="@drawable/ic_leader"
+            android:drawablePadding="20dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/training"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_applied_jobs" />
+
+        <View
+            android:id="@+id/tv_recruiters_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_training" />
+
+        <TextView
+            android:id="@+id/tv_view_training"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="6dp"
+            android:padding="4dp"
+
+            android:text="@string/view_training"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recruiters_line" />
+
+
+        <TextView
+            android:id="@+id/tv_enrollment_program"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="@string/enrollment_program"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_view_training" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+
+            android:drawableLeft="@drawable/ic_settings"
+            android:drawablePadding="20dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/settings"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_enrollment_program" />
+
+        <View
+            android:id="@+id/tv_setting_liner"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="32dp"
+
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/tv_setting" />
+
+        <!-- <TextView
+             android:id="@+id/tv_jobseeker_service"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="60dp"
+             android:layout_marginTop="6dp"
+             android:padding="4dp"
+ 
+             android:text="Jobseeker Services"
+             android:textColor="@color/text_color"
+             android:textSize="14sp"
+             app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+             app:layout_constraintTop_toBottomOf="@+id/tv_setting_liner" />
+ 
+         <TextView
+             android:id="@+id/tv_how_career_mitra_works"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="60dp"
+             android:layout_marginTop="6dp"
+ 
+             android:padding="4dp"
+             android:text="How Career Mitra Works"
+             android:textColor="@color/text_color"
+             android:textSize="14sp"
+             app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+             app:layout_constraintTop_toBottomOf="@+id/tv_jobseeker_service" />-->
+
+        <TextView
+            android:id="@+id/tv_chat_for_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="6dp"
+            android:padding="4dp"
+
+            android:text="@string/recruiters_message"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_setting_liner" />
+
+        <TextView
+            android:id="@+id/tv_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="@string/language_setting"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_chat_for_help" />
+
+        <TextView
+            android:id="@+id/tv_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="@string/feedback"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_settings" />
+
+        <TextView
+            android:id="@+id/tv_invite_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="@string/invite_friend"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_feedback" />
+
+        <TextView
+            android:id="@+id/tv_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="@string/about_us"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_invite_friend" />
+
+        <TextView
+            android:id="@+id/tv_chnage_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="@string/change_password"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/jobs_constraintlayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_about_us" />
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="@string/logout"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_chnage_password" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="@string/login"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_logout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

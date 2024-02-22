@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">Career Mitra</string>
+
+    <string name="alert_internet">कोई इंटरनेट कनेक्टिविटी नहीं है</string>
+    <string name="alert_text">चेतावनी</string>
+    <string name="share_using">मोबाइल नंबर दर्ज करें.</string>
+    <string name="permission_camera_rationale11">एप्लिकेशन का उपयोग करने के लिए कुछ अनुमति की आवश्यकता होती है.</string>
+    <string name="reqst_permission">अनुमति का अनुरोध करें?</string>
+
+    <!--Login-->
+    <string name="sign_in_text">खाता नहीं है?</string>
+    <string name="signup"><u>अभी पंजीकरण करें</u></string>
+
+    <!--Signup-->
+    <string name="log_in_text">क्या आपके पास पहले से एक खाता मौजूद है ?</string>
+    <string name="log_in"><u>लॉग इन करें</u></string>
+    <string name="version">संस्करण </string>
+
+    <string name="slide_1_title">नौकरी की तलाश करें</string>
+    <string name="slide_1_desc">हमारे साथ खोजें और हम आपको आपके लिए सही नौकरी खोजने में मदद करेंगे </string>
+
+    <string name="slide_2_title">एआई आधारित एनालिटिक्स जॉब मैच</string>
+    <string name="slide_2_desc">हमारे एआई आधारित एनालिटिक्स डैशबोर्ड भविष्य के काम के लिए सबसे अच्छा मैच कर सकते हैं</string>
+
+    <string name="slide_3_title">हर अपडेट के साथ सूचित करें</string>
+    <string name="slide_3_desc">प्रत्येक सही मिलान प्रोफ़ाइल के साथ आपको एक सूचना मिलेगी</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="register">रजिस्टर करें</string>
+    <string name="e_mail">ईमेल</string>
+    <string name="enter_the_verification_code">सत्यापन कोड दर्ज करें जिसे हमने आपको भेजा है </string>
+    <string name="create_your_career_mitra_profile">अपना कैरियर मित्र प्रोफ़ाइल बनाएं</string>
+    <string name="minimum_6_characters">न्यूनतम छह वर्ण</string>
+    <string name="password_for_your_account_will_also_be_sent_on_this_mail">इस मेल पर आपके खाते का पासवर्ड भी भेजा जाएगा.</string>
+    <string name="your_detail_will_be_visible_to_genuine_recruiters">आपका विवरण वास्तविक रिक्रूटर्स को दिखाई देगा</string>
+    <string name="keyskills_designations_companies">keyskills,पदनाम,कंपनियों</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_print_and_typesetting_industry_loerm_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_unknown_printer_look_a_galley_of_type_and_scrambled_it_to_make_a_type_specime_book">
+        Lorem Ipsum is simply dummy text of the print and typesetting industry Loerm Ipsum has been the industry\'s standard dummy text ever since the 1500s when unknown printer look a galley of type and scrambled it to make a type specime book.</string>
+    <string name="resume_uploaded"><u>अपलोड किया गया रिज्यूमे देखें</u></string>
+    <string name="search_job">नौकरी खोजें</string>
+    <string name="change_language">भाषा बदलो</string>
+    <string name="select_application_nlanguage">एप्लिकेशन भाषा का चयन करें</string>
+    <string name="view_details"><u>विवरण देखें</u></string>
+
+    <!--    File Downloader-->
+
+    <string name="document">डाक्यूमेंट</string>
+    <string name="download_ticket">फ़ाइल सफलतापूर्वक डाउनलोड की गई</string>
+    <string name="open_ticket">फाइल देखें</string>
+    <string name="oprm_file">फाइल देखें</string>
+    <string name="no_app">पीडीएफ देखने के लिए कोई एप्लिकेशन उपलब्ध नहीं है</string>
+    <string name="download_fail">डाउनलोड विफल</string>
+    <string name="ok">ठीक</string>
+    <string name="downloading">डाउनलोड...</string>
+    <string name="view">देखें</string>
+
+    <string name="moradabad_smart_city">मुरादाबाद स्मार्ट सिटी</string>
+    <string name="skip">आगे</string>
+
+    <!--Login-->
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="password">पासवर्ड</string>
+    <string name="forgot_password">पासवर्ड भूल गए ?</string>
+    <string name="donthave_acc">अभी तक कोई खाता नहीं है? साइन अप करें</string>
+    <string name="skip_for_now">आगे करें</string>
+    <string name="registered_mobile">पंजीकृत मोबाइल नंबर दर्ज करें!</string>
+    <string name="enter_pswd">पासवर्ड दर्ज करें!</string>
+
+    <!--Registration-->
+    <string name="first_name">पहला नाम</string>
+    <string name="last_name">उपनाम</string>
+    <string name="e_mail_id">ईमेल आईडी</string>
+    <string name="already_have_an_account_login">आपके पास पहले से एक खाता मौजूद है? लॉग इन करें</string>
+    <string name="valid_mobile">वैध मोबाइल नंबर दर्ज करें!</string>
+    <string name="first_valid_name">पहला नाम दर्ज करें!</string>
+    <string name="valid_mail">मान्य ईमेल आईडी दर्ज करें!</string>
+    <string name="passwrod_valid">कम से कम 6 अंकों का पासवर्ड दर्ज करेंd!</string>
+    <string name="already">पहले से ही मौजूद!</string>
+    <string name="already_mobile">Tआपके द्वारा दर्ज किया गया मोबाइल नंबर पहले ही पंजीकृत है, जारी रखने के लिए कृपया लॉगिन करें</string>
+
+    <!--Verification-->
+    <string name="verification">सत्यापन</string>
+    <string name="if_you_didn_t_receive_a_code_resend">यदि आपको एक कोड प्राप्त नहीं हुआ है? पुन: भेजें</string>
+    <string name="verify">सत्यापित करें</string>
+    <string name="otp">अपने मोबाइल पर प्राप्त 6 अंकों का ओटीपी दर्ज करें!</string>
+    <string name="click_back">कृपया बाहर निकलने के लिए फिर से वापस क्लिक करें</string>
+    <!--Side Navigation Menu-->
+    <string name="home">होम </string>
+    <string name="recent_job">नवीनतम नौकरियां</string>
+    <string name="applied_jobs">आवेदित नौकरियां</string>
+    <string name="training">प्रशिक्षण</string>
+    <string name="view_training">प्रशिक्षण देखें</string>
+    <string name="enrollment_program">नामांकन कार्यक्रम</string>
+    <string name="chat_for_help"> चैट करें</string>
+    <string name="language_setting">भाषा सेटिंग</string>
+    <string name="feedback">प्रतिपुष्टि</string>
+    <string name="invite_friend">ऐप शेयर करें</string>
+    <string name="about_us">हमारे बारे में</string>
+    <string name="change_password">पासवर्ड बदलें</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="traning_crose">प्रशिक्षण पाठ्यक्रम</string>
+    <string name="jobs_search">जॉब्स सर्च</string>
+    <string name="settings">समायोजन</string>
+    <string name="login_first_time">पहले लॉगिन करें</string>
+    <string name="please_login_to_first_time">जारी रखने के लिए कृपया लॉग इन करें!</string>
+    <string name="enter_the_olde_password">कृपया पुराना पासवर्ड डालें</string>
+    <string name="enter_new_password">कृपया नया पासवर्ड दर्ज करें</string>
+    <string name="new_password_not_be_same_sa_old_password">नया पासवर्ड पुराने पासवर्ड के समान नहीं हो सकता है</string>
+    <string name="enter_valid_mobile_no">वैध मोबाइल नंबर दर्ज करें!</string>
+    <string name="about_company">कम्पनी के बारे में</string>
+    <string name="notification">अधिसूचना</string>
+    <string name="storage_permission">अनुमति दी गई है अब आप भंडारण को पढ़ सकते हैं</string>
+    <string name="denie_permission">ओह, आपने अभी अनुमति से इनकार किया है</string>
+    <string name="select_image">फोटो का चयन करें</string>
+    <string name="write_something_about">अपने बारे में कुछ लिखें!</string>
+    <string name="update_company_name">वर्तमान कंपनी को अपडेट करें</string>
+    <string name="enter_company_designation">पदनाम और कंपनी का नाम दर्ज करें!</string>
+    <string name="select_crrosse">कोर्स का चयन करें!</string>
+    <string name="enter_collage_name">कॉलेज का नाम दर्ज करें!</string>
+    <string name="select_passing_year">पासिंग ईयर का चयन करें!</string>
+    <string name="enter_designation">पदनाम दर्ज करें!</string>
+    <string name="select_end_year">अंत वर्ष का चयन करें!</string>
+    <string name="enter_company_name">कंपनी का नाम दर्ज करें!</string>
+    <string name="select__start_year">प्रारंभ वर्ष का चयन करें!</string>
+    <string name="update_personal_information">व्यक्तिगत जानकारी अपडेट करें</string>
+    <string name="enter_father_name">पिता का नाम दर्ज करें</string>
+    <string name="enter_mother_name">माँ का नाम दर्ज करें</string>
+    <string name="login_continue">जारी रखने के लिए कृपया लॉग इन करें!</string>
+    <string name="enter_feedback">प्रतिक्रिया दर्ज करें</string>
+    <string name="search_job_list">नौकरी की सूची खोजें</string>
+    <string name="recommanded_jib">अनुशंसित नौकरियां</string>
+    <string name="applied_job">चयनित नौकरियां</string>
+    <string name="your_feedback_at_least_5_word">आपकी प्रतिक्रिया (कम से कम 5 शब्द)</string>
+    <string name="we_will_reach_you_at_9889000000_or_ndesigner_afluex_gmail_com">हम आप तक 9889000000 या \n designer.afluex@gmail.com पर पहुंचेंगे</string>
+    <string name="send_feedback">प्रतिक्रिया भेजें</string>
+    <string name="_20_new_job_on_recommended_job">अनुशंसित नौकरी पर 20 नई नौकरी</string>
+    <string name="based_on_your_profile">आपके प्रोफाइल के आधार पर</string>
+    <string name="education">शिक्षा</string>
+    <string name="personal_details">व्यक्तिगत विवरण</string>
+    <string name="father_name">पिता का नाम</string>
+    <string name="mother_name">मां का नाम</string>
+    <string name="phone_no">फोन नंबर</string>
+    <string name="address">पता</string>
+    <string name="state">राज्य</string>
+    <string name="pin_code">पिन कोड</string>
+
+    <string name="about">अपने बारे में</string>
+    <string name="experience">अनुभव</string>
+    <string name="skills_endorsements">कौशल और सहमति</string>
+    <string name="old_password">पुराना पासवर्ड</string>
+    <string name="new_password">नया पासवर्ड</string>
+    <string name="confirm_new_password">नए पासवर्ड की पुष्टि करें</string>
+    <string name="submit">प्रस्तुत</string>
+    <string name="about_yourself">अपने बारे में..</string>
+    <string name="user_designation">उपयोगकर्ता पदनाम</string>
+    <string name="company_name_location">कंपनी का नाम / स्थान</string>
+    <string name="enter_college_name">कॉलेज का नाम दर्ज करें</string>
+    <string name="passing_year">उत्तीर्ण साल</string>
+    <string name="add_education">शिक्षा जोड़ें</string>
+    <string name="designation_name">पदनाम नाम</string>
+    <string name="company_name">कंपनी का नाम</string>
+    <string name="currently_working">वर्तमान में काम कर रहे है</string>
+    <string name="male">पुरुष</string>
+    <string name="female">महिला</string>
+    <string name="enter_address_line_1">पता पंक्ति 1 दर्ज करें</string>
+    <string name="enter_address_line_2">पता पंक्ति 2 दर्ज करें</string>
+    <string name="enter_pin_code">पिन कोड दर्ज करें</string>
+    <string name="city">शहर</string>
+    <string name="update">अपडेट करें</string>
+    <string name="resume_upload">रिज़्यूमे अपलोड करें</string>
+    <string name="update_skills">अपडेट कौशल</string>
+    <string name="enter_endorsements">विज्ञापन दर्ज करें</string>
+    <string name="update_exp">अनुभव अपडेट</string>
+    <string name="start_year">शुरुवाती वर्ष</string>
+    <string name="end_year">अंत वर्ष</string>
+    <string name="about_yur">अपने बारे में</string>
+    <string name="search_job_by_skill">कौशल द्वारा नौकरी खोजें </string>
+    <string name="location">स्थान</string>
+    <string name="latest_job">नवीनतम नौकरियां</string>
+    <string name="do_logout">क्या आप वास्तव में लॉगआउट करना चाहते हैं?</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="recruiters_message">रिक्रूटर्स मैसेज</string>
+    <string name="write">कृपया संदेश लिखें</string>
+    <string name="select_department">विभाग का चयन करें</string>
+
+    <string name="select_skill">कौशल का चयन करें</string>
+    <string name="salary_range">वेतन सीमा</string>
+    <string name="select_qualification">योग्यता का चयन करें</string>
+    <string name="cancel">रद् करें</string>
+    <string name="clear">रीसेट</string>
+    <string name="apply">आवेदन </string>
+    <string name="education_qualification">शैक्षणिक योग्यता</string>
+    <string name="job_highlights">नौकरी पर प्रकाश डाला गया</string>
+    <string name="job_description"> नौकरी का विवरण</string>
+    <string name="roles_and_responsibilities">भूमिका और जिम्मेदारियां</string>
+    <string name="requirements">आवश्यकताओं को :</string>
+    <string name="description">विवरण</string>
+
+    <string name="industry_type">उद्योग के प्रकार</string>
+    <string name="functionalarea">कार्य क्षेत्र</string>
+    <string name="carpenter">बढ़ई</string>
+    <string name="role_category">भूमिका श्रेणी</string>
+    <string name="employment_type">रोजगार के प्रकार</string>
+    <string name="job_details">नौकरी विवरण</string>
+    <string name="role">भूमिका</string>
+    <string name="gender">लिंग</string>
+    <string name="email">ईमेल</string>
+    <string name="date_of_birth">जन्म की तारीख</string>
+    <string name="apply_now"> आवेदन करें</string>
+    <string name="salary_in_rs">वेतन (रु)</string>
+    <string name="industry">उद्योग </string>
+    <string name="employment">रोज़गार</string>
+    <string name="posted_job">"नौकरी पोस्ट "</string>
+    <string name="ex_pr">Experience(</string>
+    <string name="career_mitra">कैरियर मित्रा</string>
+    <string name="charPswd">कम से कम 8 अक्षर - अधिक वर्ण, अपरकेस और लोअरकेस दोनों का बेहतर \ n मिश्रण। अक्षरों और संख्याओं का \ n मिश्रण। कम-से-कम एक विशेष वर्ण, जैसे ! @ # $</string>
+</resources>

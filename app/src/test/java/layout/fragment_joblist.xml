@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_dept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/box_bg"
+        android:drawableEnd="@drawable/ic_filter"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="@string/select_department"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toStartOf="@+id/tv_qualifi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rvc_ListJob"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_qualifi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/box_bg"
+        android:drawableEnd="@drawable/ic_filter"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="@string/select_qualification"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_dept"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_skill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/box_bg"
+        android:drawableEnd="@drawable/ic_filter"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="@string/select_skill"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toStartOf="@+id/tv_salary"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rvc_ListJob"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_qualifi" />
+
+    <TextView
+        android:id="@+id/tv_salary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/box_bg"
+        android:drawableEnd="@drawable/ic_filter"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="@string/salary_range"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_skill"
+        app:layout_constraintTop_toBottomOf="@+id/tv_qualifi" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvc_ListJob"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:text="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_skill" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
