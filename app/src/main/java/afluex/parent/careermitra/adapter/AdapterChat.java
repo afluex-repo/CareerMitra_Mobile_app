@@ -1,5 +1,4 @@
 package afluex.parent.careermitra.adapter;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,19 +6,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import afluex.parent.careermitra.R;
 import afluex.parent.careermitra.app.PreferencesManager;
 import afluex.parent.careermitra.common.Utils;
-import afluex.parent.careermitra.databinding.AdapterChatBinding;
 import afluex.parent.careermitra.model.response.chatMessages.MessagesItem;
-
 import java.util.List;
-
-
 
 
 public class AdapterChat extends RecyclerView.Adapter<AdapterChat.CityViewHolder> {

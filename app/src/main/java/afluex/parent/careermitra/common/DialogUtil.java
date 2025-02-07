@@ -31,6 +31,7 @@ public class DialogUtil {
         progressDialog.setCancelable(false);
         progressDialog.setCanceledOnTouchOutside(true);
         return progressDialog;
+
     }
 
     public static void hideDialog() {

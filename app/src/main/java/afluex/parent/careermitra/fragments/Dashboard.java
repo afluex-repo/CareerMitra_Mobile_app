@@ -44,6 +44,7 @@ public class Dashboard extends BaseFragment {
 //                }
 //            }
 //        });
+
         return binding.getRoot();
     }
 
@@ -57,4 +58,5 @@ public class Dashboard extends BaseFragment {
         new Handler().postDelayed(() -> hideLoading(), 1200);
         super.onResume();
     }
+
 }

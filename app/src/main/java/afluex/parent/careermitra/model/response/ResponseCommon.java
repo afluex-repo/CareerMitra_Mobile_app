@@ -24,4 +24,5 @@ public class ResponseCommon{
     public Integer getStatusCode(){
         return statusCode;
     }
+
 }

@@ -30,8 +30,8 @@
         android:theme="@style/NoActionThemeFull"
         android:usesCleartextTraffic="true"
         tools:replace="android:theme"
-
         tools:ignore="HardcodedDebugMode">
+
         <activity android:name=".activity.Splash"
             android:exported="true">
             <intent-filter>
@@ -40,6 +40,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".activity.ChangePassword"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -87,11 +88,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.OtpVerification"
-
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".activity.ContainerActivity"
-
             android:theme="@style/AppTheme.NoActionBar" />
 
         <provider
@@ -128,7 +128,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <!--        Notification-->
-
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
@@ -139,7 +138,6 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
 
         <service android:name=".notifications.MyFirebaseInstanceIDService"
             android:exported="true">

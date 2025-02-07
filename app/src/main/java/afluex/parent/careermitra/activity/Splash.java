@@ -96,21 +96,28 @@ SplashBinding binding;
         object.addProperty("address", "");
         object.addProperty("deviceId", Utils.getAndroidDeviceId(context));
         object.addProperty("deviceOtherInfo", "");
-        object.addProperty("lat", PreferencesManager.getInstance(context).getLatitude());
-        object.addProperty("long", PreferencesManager.getInstance(context).getLongitude());
+        object.addProperty("lat",PreferencesManager.getInstance(context).getLatitude());
+        object.addProperty("long",PreferencesManager.getInstance(context).getLongitude());
         object.addProperty("ip", "");
         object.addProperty("domain", "");
         object.addProperty("userAgent", "");
         object.addProperty("os", "");
 
+        Log.e("EDFVKH",Utils.getAndroidDeviceId(context));
+        Log.e("EDFVKH",PreferencesManager.getInstance(context).getLatitude());
+        Log.e("EDFVKH",PreferencesManager.getInstance(context).getLongitude());
+
 
         Call<ResponseCommon> call = apiServices.CheckLogIn(bodyParam(object));
+        Log.e("EDFVKH",""+bodyParam(object));
+
         call.enqueue(new Callback<ResponseCommon>() {
             @Override
             public void onResponse(Call<ResponseCommon> call, Response<ResponseCommon> response) {
                 hideLoading();
 
                 ResponseRegistration registration;
+//                Log.e("EDFVKH111",""+ response.body().getStatusCode());
                 try {
                     if (response.body().getStatusCode().equals(200)) {
                         String paramResponse = Cons.decryptMsg(response.body().getBody(), cross_intent);
@@ -132,12 +139,19 @@ SplashBinding binding;
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
+                    Log.e("Erghs",e.getMessage());
                 }
             }
 
             @Override
             public void onFailure(Call<ResponseCommon> call, Throwable t) {
                 hideLoading();
+//                if (PreferencesManager.getInstance(context).getIsFirstTimeLaunch())
+//                    goToActivityWithFinish(context, LanguageSeletion.class, null);
+//                else
+//                    goToActivityWithFinish(context, Login.class, null);
+                Log.e("EDFVKH123",""+ t.getMessage());
+
             }
         });
     }

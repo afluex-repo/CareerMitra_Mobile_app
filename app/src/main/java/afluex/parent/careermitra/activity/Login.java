@@ -3,6 +3,7 @@ package afluex.parent.careermitra.activity;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -149,7 +150,9 @@ public class Login extends BaseActivity {
 
             @Override
             public void onFailure(Call<ResponseCommon> call, Throwable t) {
+
                 hideLoading();
+                Log.e("EDFVKH",t.toString());
             }
         });
     }

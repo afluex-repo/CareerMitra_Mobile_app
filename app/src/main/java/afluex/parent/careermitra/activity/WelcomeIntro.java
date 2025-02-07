@@ -1,5 +1,4 @@
 package afluex.parent.careermitra.activity;
-
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
@@ -13,10 +12,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import afluex.parent.careermitra.R;
 import afluex.parent.careermitra.app.PreferencesManager;
 import afluex.parent.careermitra.constants.BaseActivity;

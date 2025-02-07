@@ -33,6 +33,7 @@ CustomActionBarBinding toolbar;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        binding=EditDesignationNameBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         toolbar=binding.toolbar;
         

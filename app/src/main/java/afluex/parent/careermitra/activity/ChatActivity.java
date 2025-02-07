@@ -1,25 +1,15 @@
 package afluex.parent.careermitra.activity;
-
-
-
 import static afluex.parent.careermitra.app.AppConfig.PAYLOAD_BUNDLE;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
-
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
-
 import afluex.parent.careermitra.R;
 import afluex.parent.careermitra.adapter.AdapterChat;
 import afluex.parent.careermitra.app.PreferencesManager;
@@ -30,21 +20,16 @@ import afluex.parent.careermitra.constants.Cons;
 import afluex.parent.careermitra.databinding.ChatActivityBinding;
 import afluex.parent.careermitra.model.response.ResponseCommon;
 import afluex.parent.careermitra.model.response.chatMessages.ResponseChatMessages;
-
-
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
+
 public class ChatActivity extends BaseActivity {
-
-
-
     EditText etComment;
     Bundle bundle;
     SwipeRefreshLayout swipe_refresh;
-
     ChatActivityBinding binding;
 
     @Override

@@ -1,11 +1,7 @@
 package afluex.parent.careermitra.activity;
-
 import android.os.Bundle;
 import android.view.View;
-
 import androidx.annotation.Nullable;
-
-import afluex.parent.careermitra.R;
 import afluex.parent.careermitra.app.PreferencesManager;
 import afluex.parent.careermitra.constants.BaseActivity;
 import afluex.parent.careermitra.databinding.ChangeLanguageBinding;

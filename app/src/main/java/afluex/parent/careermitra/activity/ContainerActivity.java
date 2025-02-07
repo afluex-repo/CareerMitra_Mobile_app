@@ -225,7 +225,7 @@ public class ContainerActivity extends BaseActivity implements NavigationView.On
             }
 
         });
-        sidemenuLayoutBinding.tvSetting.setOnClickListener(new View.OnClickListener() {
+        sidemenuLayoutBinding.tvSettings1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToActivityWithFinish(context, LanguageSeletion.class, null);
@@ -359,7 +359,7 @@ public class ContainerActivity extends BaseActivity implements NavigationView.On
                 case R.id.tv_logout:
                     logoutDialog(context, Login.class);
                     break;
-                case R.id.tv_settings:
+                case R.id.tv_settings1:
                     goToActivityWithFinish(context, LanguageSeletion.class, null);
                     break;
                 case R.id.tv_login:

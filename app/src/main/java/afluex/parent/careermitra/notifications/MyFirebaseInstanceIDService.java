@@ -34,6 +34,7 @@ public class MyFirebaseInstanceIDService extends FirebaseMessagingService {
         Intent registrationComplete = new Intent(Config.REGISTRATION_COMPLETE);
         registrationComplete.putExtra("token", s);
         LocalBroadcastManager.getInstance(this).sendBroadcast(registrationComplete);
+
     }
 
 //    @Override

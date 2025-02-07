@@ -52,6 +52,8 @@ public class Edit_Education extends BaseActivity {
         binding=EditEducationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        toolbar=binding.toolbar;
+
        toolbar.tvTitle.setText(getResources().getString(R.string.education_qualification));
 
         courseMenu = new PopupMenu(context, binding.etCourse);
